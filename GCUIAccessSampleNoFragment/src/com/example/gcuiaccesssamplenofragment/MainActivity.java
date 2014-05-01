@@ -9,18 +9,18 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 	//Private variables for the EditText and TextView
-	private EditText mtextInput;
-	private TextView mtextOutput;
+	private EditText mTextInput;
+	private TextView mTextOutput;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		//Obtain reference to EditText and TextView form fields
-		mtextInput = (EditText) findViewById(R.id.textInput);
-		mtextOutput = (TextView) findViewById(R.id.textOutput);
+		mTextInput = (EditText) findViewById(R.id.textInput);
+		mTextOutput = (TextView) findViewById(R.id.textOutput);
 		//Add a listener
-		mtextInput.addTextChangedListener(new TextWatcher(){
+		mTextInput.addTextChangedListener(new TextWatcher(){
 			@Override
 			public void beforeTextChanged(CharSequence s, int start, int count,
 					int after) {
@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 			public void onTextChanged(CharSequence s, int start, int before,
 					int count) {
 				// TODO Auto-generated method stub
-				mtextOutput.setText("You Entered: " + mtextInput.getText().toString());
+				mTextOutput.setText("You Entered: " + mTextInput.getText().toString());
 			}
 
 			@Override
