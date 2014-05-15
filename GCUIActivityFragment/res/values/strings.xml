@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GCUIActivityFragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="fragment_default">[Value from Activity]</string>
+    <string name="activity_default">[Value from Fragment]</string>
+
+</resources>
